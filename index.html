@@ -65,14 +65,18 @@
 
         /* Section Styles */
         section {
-            padding: 60px 20px; /* Add extra padding for mobile separation */
+            padding: 60px 20px; /* Consistent padding for all sections */
             text-align: center;
+            margin: 20px 0; /* Added margin to separate sections */
+            border-radius: 10px; /* Rounded corners for aesthetics */
         }
 
         /* Slideshow Styling */
         .slideshow {
             position: relative;
             overflow: hidden;
+            border-radius: 10px;
+            margin: 20px 0;
         }
 
         .slide {
@@ -86,6 +90,7 @@
             width: 100%;
             height: 100vh;
             object-fit: cover;
+            border-radius: 10px; /* Rounded corners */
         }
 
         @keyframes slide-animation {
@@ -111,8 +116,8 @@
         }
 
         /* Section Background Colors */
-        #services, #contact {
-            background-color: #fff;
+        #services {
+            background-color: #f7da3a;
             color: #333;
         }
 
@@ -130,25 +135,27 @@
         section p {
             font-size: 1.5em;
             max-width: 600px;
+            margin: 0 auto; /* Center paragraph */
         }
 
         /* Quotes Styling */
         .yellow-quote {
             color: #f7da3a;
-            background-color: #000;
+            background-color: #333;
             font-size: 1.2em;
             padding: 5px;
             margin: 5px 0;
+            border-radius: 5px; /* Added rounded corners for quotes */
         }
 
         /* Gallery Grid Styling */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto; /* Center gallery grid */
         }
 
         .gallery-item {
@@ -166,21 +173,27 @@
         }
 
         /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr); /* Adjust grid for tablets */
+            }
+        }
+
         @media (max-width: 768px) {
             .marquee, .quote {
                 font-size: 18px;
             }
 
             section h2 {
-                font-size: 2em;
+                font-size: 2.5em; /* Adjust font size */
             }
 
             section p {
-                font-size: 1.2em;
+                font-size: 1.2em; /* Adjust font size */
             }
 
             .gallery-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* Single column on smaller screens */
             }
         }
 
@@ -190,7 +203,7 @@
             }
 
             .slide img {
-                height: 60vh; /* Adjust slideshow image height */
+                height: 50vh; /* Adjust slideshow image height */
             }
         }
     </style>
@@ -236,6 +249,12 @@
         <p class="yellow-quote">“Efficiency that digs deep into your satisfaction.”</p>
         <p class="yellow-quote">“Ready for your toughest job, whenever and wherever.”</p>
         <p class="yellow-quote">“Let us handle the heavy lifting while you build.”</p>
+        <p class="yellow-quote">“From foundation to finish, we’re with you.”</p>
+        <p class="yellow-quote">“When it comes to reliability, we dig deeper.”</p>
+        <p class="yellow-quote">“High-performance machines, expertly operated.”</p>
+        <p class="yellow-quote">“Exceeding standards one job at a time.”</p>
+        <p class="yellow-quote">“When you need power, precision, and reliability.”</p>
+        <p class="yellow-quote">“Moving earth with ease for every project.”</p>
     </section>
 
     <!-- Gallery Section with Photos -->
@@ -248,6 +267,12 @@
             <div class="gallery-item">
                 <img src="jcb2.jpg" alt="JCB Photo 2">
             </div>
+            <div class="gallery-item">
+                <img src="jcb3.jpg" alt="JCB Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="jcb4.jpg" alt="JCB Photo 4">
+            </div>
         </div>
     </section>
 
@@ -259,3 +284,4 @@
     </section>
 </body>
 </html>
+  
