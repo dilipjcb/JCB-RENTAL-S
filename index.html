@@ -65,10 +65,11 @@
 
         /* Section Styles */
         section {
-            padding: 60px 20px; /* Consistent padding for all sections */
+            padding: 60px 20px;
             text-align: center;
-            margin: 20px 0; /* Added margin to separate sections */
-            border-radius: 10px; /* Rounded corners for aesthetics */
+            margin: 20px 0;
+            border-radius: 10px;
+            min-height: 300px; /* Ensures each section has a minimum height */
         }
 
         /* Slideshow Styling */
@@ -90,7 +91,7 @@
             width: 100%;
             height: 100vh;
             object-fit: cover;
-            border-radius: 10px; /* Rounded corners */
+            border-radius: 10px;
         }
 
         @keyframes slide-animation {
@@ -135,7 +136,7 @@
         section p {
             font-size: 1.5em;
             max-width: 600px;
-            margin: 0 auto; /* Center paragraph */
+            margin: 0 auto;
         }
 
         /* Quotes Styling */
@@ -145,7 +146,7 @@
             font-size: 1.2em;
             padding: 5px;
             margin: 5px 0;
-            border-radius: 5px; /* Added rounded corners for quotes */
+            border-radius: 5px;
         }
 
         /* Gallery Grid Styling */
@@ -155,7 +156,7 @@
             gap: 20px;
             padding: 20px;
             max-width: 1200px;
-            margin: 0 auto; /* Center gallery grid */
+            margin: 0 auto;
         }
 
         .gallery-item {
@@ -175,7 +176,7 @@
         /* Media Queries for Responsiveness */
         @media (max-width: 1024px) {
             .gallery-grid {
-                grid-template-columns: repeat(2, 1fr); /* Adjust grid for tablets */
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -185,25 +186,25 @@
             }
 
             section h2 {
-                font-size: 2.5em; /* Adjust font size */
+                font-size: 2.5em;
             }
 
             section p {
-                font-size: 1.2em; /* Adjust font size */
+                font-size: 1.2em;
             }
 
             .gallery-grid {
-                grid-template-columns: 1fr; /* Single column on smaller screens */
+                grid-template-columns: 1fr;
             }
         }
 
         @media (max-width: 576px) {
             section {
-                padding: 40px 10px; /* Reduce padding on very small screens */
+                padding: 40px 10px;
             }
 
             .slide img {
-                height: 50vh; /* Adjust slideshow image height */
+                height: 50vh;
             }
         }
     </style>
@@ -276,12 +277,11 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Marquee -->
     <section id="contact">
+        <marquee behavior="scroll" direction="left" scrollamount="6" class="marquee">
+            Contact Us: Phone: +919591237189 | Address: Sonala, Kamal Nagar, Karnataka, PIN: 585417
+        </marquee>
         <h2>Contact Us</h2>
         <p>Phone: +919591237189</p>
-        <p>Address: Sonala, Kamal Nagar, Karnataka, PIN: 585417</p>
-    </section>
-</body>
-</html>
-  
+        <p>Address: Sonala, Kamal Nagar, Karnataka, PIN
